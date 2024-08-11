@@ -1,35 +1,26 @@
-// Linking a JavaScript File
-let js = "amazing";
-console.log(40 + 8 + 23 - 10);
-
 /*
-////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////
 // Values and Variables
-console.log("Jonas");
-console.log(23);
+//A variable is a named reference to a value. That way an unpredictable value can be accessed through a predetermined name
+//Conventions and rules to name variables: camelCase, , , no reserved JS keywords, , letters, underscore or dollar sign
 
-let firstName = "Matilda";
-
-console.log(firstName);
-console.log(firstName);
-console.log(firstName);
-
+////////////////////////////////////////////////////////////////////////
 // Variable name conventions
-let jonas_matilda = "JM";
-let $function = 27;
+let firstName = "Nicolas"; //The best way would be the convention of writing with camelCase
+let jonas_matilda = "JM"; //The name can contain underscore
+let $function = 27; //The name can contain the dollar sign
 
-let person = "jonas";
-let PI = 3.1415;
+let person = "jonas"; //No uppercase at the beginning
+let PI = 3.1415; //No reserved JS keywords or real constants
+let myFirstJob = "Coder"; //No number at the beginning
+let myCurrentJob = "Teacher"; //Name should be descriptive
 
-let myFirstJob = "Coder";
-let myCurrentJob = "Teacher";
+let job1 = "programmer"; //May contain numbers
+let job2 = "teacher"; //Not as descriptive
+*/
 
-let job1 = "programmer";
-let job2 = "teacher";
-
-console.log(myFirstJob);
-
-////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 // Data Types
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
@@ -39,7 +30,7 @@ console.log(typeof javascriptIsFun);
 // console.log(typeof 23);
 // console.log(typeof 'Jonas');
 
-javascriptIsFun = 'YES!';
+javascriptIsFun = "YES!";
 console.log(typeof javascriptIsFun);
 
 let year;
@@ -60,10 +51,10 @@ const birthYear = 1991;
 // birthYear = 1990;
 // const job;
 
-var job = 'programmer';
-job = 'teacher'
+var job = "programmer";
+job = "teacher";
 
-lastName = 'Schmedtmann';
+lastName = "Schmedtmann";
 console.log(lastName);
 
 ////////////////////////////////////
@@ -77,9 +68,9 @@ console.log(ageJonas, ageSarah);
 console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
 // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-const firstName = 'Jonas';
-const lastName = 'Schmedtmann';
-console.log(firstName + ' ' + lastName);
+const firstName = "Jonas";
+const lastName = "Schmedtmann";
+console.log(firstName + " " + lastName);
 
 // Assignment operators
 let x = 10 + 5; // 15
@@ -89,7 +80,7 @@ x++; // x = x + 1
 x--;
 x--;
 console.log(x);
-
+/*
 // Comparison operators
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);
