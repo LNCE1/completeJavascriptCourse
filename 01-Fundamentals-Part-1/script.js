@@ -20,29 +20,35 @@ let job1 = "programmer"; //May contain numbers
 let job2 = "teacher"; //Not as descriptive
 */
 
+/*
 ////////////////////////////////////////////////////////////////////////
-// Data Types
+// Data Types: Values can have different types depending on the value we want variables to hold
+// Dynamic typing is a JS feature: We do not have to manually define the data type of the value stored in a variable. Instead, data types are determined automatically
+// A value can be object or a primitive value
+// 7 Primitive data types in JavaScript:
+Number: floating point numbers (they always have decimals)
+Strings: Sequence of characters, always goes between quotes
+Boolean: Logical type values, either true or false, used most to take decisions with code
+Undefined: Value taken by a variable that is not yet defined (declared variable but no value assigned)
+Null: Means empty value
+Symbol: Value that is unique and cannot be changed
+BigInt: Larger integers than the Number type can hold
+
 let javascriptIsFun = true;
-console.log(javascriptIsFun);
-
-// console.log(typeof true);
-console.log(typeof javascriptIsFun);
-// console.log(typeof 23);
-// console.log(typeof 'Jonas');
-
+console.log(javascriptIsFun); //true
+console.log(typeof javascriptIsFun); //boolean
 javascriptIsFun = "YES!";
-console.log(typeof javascriptIsFun);
-
+console.log(typeof javascriptIsFun); //string
 let year;
-console.log(year);
-console.log(typeof year);
-
+console.log(year); //undefined
+console.log(typeof year); //undefined
 year = 1991;
-console.log(typeof year);
+console.log(typeof year); //number
 
-console.log(typeof null);
+console.log(typeof null); //object (It should return null but it is a JavaScript bug)
+*/
 
-////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 // let, const and var
 let age = 30;
 age = 31;
@@ -57,7 +63,7 @@ job = "teacher";
 lastName = "Schmedtmann";
 console.log(lastName);
 
-////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 // Basic Operators
 // Math operators
 const now = 2037;
@@ -80,7 +86,7 @@ x++; // x = x + 1
 x--;
 x--;
 console.log(x);
-/*
+
 // Comparison operators
 console.log(ageJonas > ageSarah); // >, <, >=, <=
 console.log(ageSarah >= 18);
@@ -89,7 +95,8 @@ const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
 
-////////////////////////////////////
+/*
+////////////////////////////////////////////////////////////////////////
 // Operator Precedence
 const now = 2037;
 const ageJonas = now - 1991;
@@ -105,7 +112,7 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
 
-////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 //  Coding Challenge #1
 
 /*
