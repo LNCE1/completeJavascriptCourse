@@ -65,6 +65,7 @@ lastName = "Schmedtmann";
 console.log(lastName);
 */
 
+/*
 ////////////////////////////////////////////////////////////////////////
 // Basic Operators
 // Math operators
@@ -97,7 +98,8 @@ const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
 
-/*
+*/
+
 ////////////////////////////////////////////////////////////////////////
 // Operator Precedence
 const now = 2037;
@@ -112,7 +114,6 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
-*/
 
 ////////////////////////////////////////////////////////////////////////
 //  Coding Challenge #1
