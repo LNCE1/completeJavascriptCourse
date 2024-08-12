@@ -48,6 +48,7 @@ console.log(typeof year); //number
 console.log(typeof null); //object (It should return null but it is a JavaScript bug)
 */
 
+/*
 ////////////////////////////////////////////////////////////////////////
 // let, const and var
 let age = 30;
@@ -62,6 +63,7 @@ job = "teacher";
 
 lastName = "Schmedtmann";
 console.log(lastName);
+*/
 
 ////////////////////////////////////////////////////////////////////////
 // Basic Operators
