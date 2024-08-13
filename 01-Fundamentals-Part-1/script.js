@@ -132,13 +132,13 @@ console.log(ageJonas, ageSarah, averageAge);
 // TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76 m tall.
 
 // GOOD LUCK 😀
-
+/*
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
 const heightJohn = 1.95;
 
-/*
+
 const massMark = 95;
 const heightMark = 1.88;
 const massJohn = 85;
@@ -151,14 +151,18 @@ const markHigherBMI = BMIMark > BMIJohn;
 console.log(BMIMark, BMIJohn, markHigherBMI);
 console.log(BMIMark, BMIJohn, markHigherBMI);
 
-////////////////////////////////////
+*/
+
+/*
+////////////////////////////////////////////////////////////////////////
 // Strings and Template Literals
-const firstName = 'Jonas';
-const job = 'teacher';
+const firstName = "Jonas";
+const job = "teacher";
 const birthYear = 1991;
 const year = 2037;
-
-const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+//In the following example, the calculation returns a number inside a string, works because of "type coercion"
+const jonas =
+  "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
 console.log(jonas);
 
 const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
@@ -166,23 +170,31 @@ console.log(jonasNew);
 
 console.log(`Just a regular string...`);
 
-console.log('String with \n\
+console.log(
+  "String with \n\
 multiple \n\
-lines');
+lines"
+);
 
 console.log(`String
 multiple
 lines`);
-
-
-////////////////////////////////////
+*/
+/*
+////////////////////////////////////////////////////////////////////////
 // Taking Decisions: if / else Statements
-const age = 15;
+const age = 20;
+const legalAge = 18;
 
-if (age >= 18) {
-  console.log('Sarah can start driving license 🚗');
+if (age >= legalAge) {
+  console.log("Sarah can start driving license 🚗");
+} else if (legalAge - age === 1) {
+  console.log(`Sarah is too young. Wait another year :)`);
+} else if (legalAge - age < 1) {
+  const ageMonths = (legalAge - age) * 10;
+  console.log(`Sarah is too young. Wait another ${ageMonths} months :)`);
 } else {
-  const yearsLeft = 18 - age;
+  const yearsLeft = legalAge - age;
   console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
 }
 
@@ -194,24 +206,22 @@ if (birthYear <= 2000) {
 } else {
   century = 21;
 }
-console.log(century);
+//console.log(century);
+
 */
 
-////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 // Coding Challenge #2
 
-/*
-Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+// Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
 
-1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
-2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+// 1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+// 2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
 
-HINT: Use an if/else statement 😉
+// HINT: Use an if/else statement 😉
 
-GOOD LUCK 😀
-*/
+// GOOD LUCK 😀
 
-/*
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
@@ -227,11 +237,12 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 console.log(BMIMark, BMIJohn);
 
 if (BMIMark > BMIJohn) {
-  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
 } else {
-  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`)
+  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`);
 }
 
+/*
 ////////////////////////////////////
 // Type Conversion and Coercion
 
