@@ -210,6 +210,7 @@ if (birthYear <= 2000) {
 
 */
 
+/*
 ////////////////////////////////////////////////////////////////////////
 // Coding Challenge #2
 
@@ -258,31 +259,34 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`);
 }
+*/
 
-/*
-////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 // Type Conversion and Coercion
 
-// type conversion
-const inputYear = '1991';
+// Type conversion (or typecasting) means transfer of data from one data type to another
+const inputYear = "1991";
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
 
-console.log(Number('Jonas'));
+console.log(Number("Jonas"));
 console.log(typeof NaN);
 
 console.log(String(23), 23);
 
-// type coercion
-console.log('I am ' + 23 + ' years old');
-console.log('23' - '10' - 3);
-console.log('23' / '2');
+// Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers). Is similar to -Type Conversion- because they both convert values from one data type to another with one key difference — type conversion- is mostly explicit whereas type coercion can it's implicit by JavaScript
+console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3);
+console.log("23" / "2");
 
-let n = '1' + 1; // '11'
+let n = "1" + 1; // '11'
 n = n - 1;
 console.log(n);
+/*
+ */
 
-////////////////////////////////////
+/*
+////////////////////////////////////////////////////////////////////////
 // Truthy and Falsy Values
 
 // 5 falsy values: 0, '', undefined, null, NaN
