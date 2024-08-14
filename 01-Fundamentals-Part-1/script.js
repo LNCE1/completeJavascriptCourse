@@ -221,7 +221,24 @@ if (birthYear <= 2000) {
 // HINT: Use an if/else statement 😉
 
 // GOOD LUCK 😀
+//MY SOLUTION
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
 
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+
+if (BMIMark > BMIJohn) {
+  console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+} else if (BMIJohn > BMIMark) {
+  console.log(`John's BMI (${BMIJohn}) is higher than Marks's (${BMIMark})!`);
+} else {
+  console.log(`John's BMI (${BMIJohn}) is equal to Marks's (${BMIMark})!`);
+}
+
+//Jonas Schmedtmann Solution
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
