@@ -315,8 +315,10 @@ if (height) {
 ////////////////////////////////////////////////////////////////////////
 // Equality Operators: == vs. ===
 const age = "18";
+//Strict equality operator
+//The strict equality (===) operator checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator (==), the strict equality operator always considers operands of different types to be different.
 if (age === 18) console.log("You just became an adult :D (strict)");
-
+//Loose equality operator allows type coercion so 18 == "18" it's true
 if (age == 18) console.log("You just became an adult :D (loose)");
 
 const favourite = Number(prompt("What's your favourite number?"));
