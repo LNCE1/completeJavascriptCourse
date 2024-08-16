@@ -370,7 +370,6 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 ////////////////////////////////////
 // Coding Challenge #3
 
-
 There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins the a trophy!
 
 1. Calculate the average score for each team, using the test data below
@@ -387,6 +386,20 @@ GOOD LUCK 😀
 */
 
 /*
+function average(a, b, c) {
+  return (a + b + c) / 3;
+}
+const scoreDolphins = average(96, 108, 89);
+const scoreKoalas = average(88, 91, 110);
+
+if (scoreDolphins > scoreKoalas) {
+  console.log("Dolphins win the trophy");
+} else if (scoreKoalas > scoreDolphins) {
+  console.log("Koalas win the trophy");
+} else if (scoreDolphins === scoreKoalas) {
+  console.log("Both win the trophy");
+}
+
 // const scoreDolphins = (96 + 108 + 89) / 3;
 // const scoreKoalas = (88 + 91 + 110) / 3;
 // console.log(scoreDolphins, scoreKoalas);
@@ -413,8 +426,10 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else {
   console.log('No one wins the trophy 😭');
 }
+*/
 
-////////////////////////////////////
+/*
+////////////////////////////////////////////////////////////////////////
 // The switch Statement
 const day = 'friday';
 
