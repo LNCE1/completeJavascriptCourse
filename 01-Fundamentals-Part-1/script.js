@@ -430,60 +430,52 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 
 /*
 ////////////////////////////////////////////////////////////////////////
-// The switch Statement
-const day = 'friday';
+// The switch Statement: The switch statement evaluates an expression, matching the expression's value against a series of case clauses, and executes statements after the first case clause with a matching value, until a break statement is encountered. The default clause of a switch statement will be jumped to if no case matches the expression's value.
+const day = "friday";
 
 switch (day) {
-  case 'monday': // day === 'monday'
-    console.log('Plan course structure');
-    console.log('Go to coding meetup');
+  case "monday": // day === 'monday'
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
     break;
-  case 'tuesday':
-    console.log('Prepare theory videos');
+  case "tuesday":
+    console.log("Prepare theory videos");
     break;
-  case 'wednesday':
-  case 'thursday':
-    console.log('Write code examples');
+  case "wednesday":
+    console.log("Day Off");
     break;
-  case 'friday':
-    console.log('Record videos');
+  case "thursday":
+    console.log("Write code examples");
     break;
-  case 'saturday':
-  case 'sunday':
-    console.log('Enjoy the weekend :D');
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+    console.log("Prepare theory videos");
+    break;
+  case "sunday":
+    console.log("Enjoy the weekend :D");
     break;
   default:
-    console.log('Not a valid day!');
+    console.log("Not a valid day!");
 }
+*/
 
-if (day === 'monday') {
-  console.log('Plan course structure');
-  console.log('Go to coding meetup');
-} else if (day === 'tuesday') {
-  console.log('Prepare theory videos');
-} else if (day === 'wednesday' || day === 'thursday') {
-  console.log('Write code examples');
-} else if (day === 'friday') {
-  console.log('Record videos');
-} else if (day === 'saturday' || day === 'sunday') {
-  console.log('Enjoy the weekend :D');
-} else {
-  console.log('Not a valid day!');
-}
-
-////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
 // Statements and Expressions
-3 + 4
-1991
-true && false && !false
+3 + 4;
+1991;
+true && false && !false;
 
 if (23 > 10) {
-  const str = '23 is bigger';
+  const str = "23 is bigger";
 }
 
-const me = 'Jonas';
+const me = "Jonas";
 console.log(`I'm ${2037 - 1991} years old ${me}`);
 
+/* */
+/*
 ////////////////////////////////////
 // The Conditional (Ternary) Operator
 const age = 23;
