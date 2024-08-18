@@ -482,22 +482,24 @@ console.log(`I'm ${2037 - 1991} years old ${me}`);
 */
 
 ////////////////////////////////////
-// The Conditional (Ternary) Operator
+// The Conditional (Ternary) Operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.
+
 const age = 23;
-// age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
-
+//Conditional (Ternary) operator example:
 const drink = age >= 18 ? "wine 🍷" : "water 💧";
-console.log(drink);
+console.log(drink); //wine
 
+//If/Else statement equivalent to previous example:
 let drink2;
 if (age >= 18) {
   drink2 = "wine 🍷";
 } else {
   drink2 = "water 💧";
 }
-console.log(drink2);
+console.log(drink2); //wine
 
-console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
+//The conditional ternary operator works well to take quick decisions and can be used as an expression inside template literals because creates a value
+console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`); //I like to drink wine 🍷
 /**/
 
 ////////////////////////////////////
