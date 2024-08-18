@@ -481,6 +481,7 @@ console.log(`I'm ${2037 - 1991} years old ${me}`);
 
 */
 
+/*
 ////////////////////////////////////
 // The Conditional (Ternary) Operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.
 
@@ -500,11 +501,10 @@ console.log(drink2); //wine
 
 //The conditional ternary operator works well to take quick decisions and can be used as an expression inside template literals because creates a value
 console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`); //I like to drink wine 🍷
-/**/
+*/
 
 ////////////////////////////////////
 // Coding Challenge #4
-
 /*
 Steven wants to build a very simple tip calculator for whenever he goes eating in a resturant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
 
@@ -518,9 +518,15 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300 😉
 
 GOOD LUCK 😀
 */
-
-/*
+//MY SOLUTION
 const bill = 430;
-const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
-console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
-*/
+const tip = bill >= 50 && bill <= 300 ? (bill * 15) / 100 : (bill * 20) / 100;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+); //The bill was 430, the tip was 86, and the total value 516
+
+//Jonas Solution
+// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// console.log(
+//   `The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`
+// );
