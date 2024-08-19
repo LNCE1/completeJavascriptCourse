@@ -64,15 +64,15 @@ console.log(ageDeclaration, ageExpression);
 
 */
 
-///////////////////////////////////////
-// Arrow functions
-
+//////////////////////////////////////////////////////////////////////////////
+// Arrow functions: It's perfect for a one liner function. We don't need curly braces, the return happens implicitly, So, is a compact alternative to a traditional function expression
 const calcAge3 = (birthYeah) => 2037 - birthYeah;
 const age3 = calcAge3(1991);
 console.log(age3);
 
-const yearsUntilRetirement = (birthYeah, firstName) => {
-  const age = 2037 - birthYeah;
+//If we have more than one line of code and more than one parameter, we have to write the return keyword and wrap the parameters with parenthesis
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
   const retirement = 65 - age;
   // return retirement;
   return `${firstName} retires in ${retirement} years`;
