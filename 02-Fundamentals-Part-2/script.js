@@ -63,9 +63,10 @@ const ageExpression = calcAge2(1991);
 console.log(ageDeclaration, ageExpression);
 
 */
-
+/* 
 //////////////////////////////////////////////////////////////////////////////
 // Arrow functions: It's perfect for a one liner function. We don't need curly braces, the return happens implicitly, So, is a compact alternative to a traditional function expression
+//Arrow functions don't accept this keyword
 const calcAge3 = (birthYeah) => 2037 - birthYeah;
 const age3 = calcAge3(1991);
 console.log(age3);
@@ -81,24 +82,28 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log(yearsUntilRetirement(1991, "Jonas"));
 console.log(yearsUntilRetirement(1980, "Bob"));
 
-/* */
-/*
-///////////////////////////////////////
+*/
+/* 
+//////////////////////////////////////////////////////////////////////////////
 // Functions Calling Other Functions
+
+//Function expression that we are going to call
 function cutFruitPieces(fruit) {
   return fruit * 4;
 }
-
-function fruitProcessor(apples, oranges) {
+//Main function expression
+const fruitProcessor = function (apples, oranges) {
   const applePieces = cutFruitPieces(apples);
   const orangePieces = cutFruitPieces(oranges);
 
   const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
   return juice;
-}
-console.log(fruitProcessor(2, 3));
+};
 
+console.log(fruitProcessor(2, 3)); //Juice with 8 piece of apple and 12 pieces of orange.
 
+*/
+/*
 ///////////////////////////////////////
 // Reviewing Functions
 const calcAge = function (birthYeah) {
