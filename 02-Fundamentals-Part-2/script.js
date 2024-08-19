@@ -1,44 +1,47 @@
-'use strict';
-
+"use strict"; //forbid us to do certain things, let us know when it fails
 /*
-///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 // Activating Strict Mode
 let hasDriversLicense = false;
 const passTest = true;
 
 if (passTest) hasDriversLicense = true;
-if (hasDriversLicense) console.log('I can drive :D');
+if (hasDriversLicense) console.log("I can drive :D");
 
 // const interface = 'Audio';
 // const private = 534;
 
+*/
+/* 
+//////////////////////////////////////////////////////////////////////////////
+// Functions: Piece of code that we can reuse. It should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.
 
-///////////////////////////////////////
-// Functions
 function logger() {
-  console.log('My name is Jonas');
+  console.log("My name is Nicolas"); //actually this is not returning a value
 }
 
-// calling / running / invoking function
+// calling / running / invoking function, in other words, using the function
 logger();
 logger();
 logger();
 
+//The function accepts parameters. When we call it, the values are arguments
 function fruitProcessor(apples, oranges) {
   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
   return juice;
 }
 
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
+const appleJuice = fruitProcessor(5, 0); //5 and 0 are arguments
+console.log(appleJuice); //Juice with 5 apples and 0 oranges.
 
 const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+console.log(appleOrangeJuice); //Juice with 2 apples and 4 oranges.
 
-const num = Number('23');
+const num = Number("23");
+console.log(num);
+*/
 
-
-///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 // Function Declarations vs. Expressions
 
 // Function declaration
@@ -50,12 +53,13 @@ const age1 = calcAge1(1991);
 // Function expression
 const calcAge2 = function (birthYeah) {
   return 2037 - birthYeah;
-}
+};
 const age2 = calcAge2(1991);
 
 console.log(age1, age2);
 
-
+/* */
+/*
 ///////////////////////////////////////
 // Arrow functions
 
