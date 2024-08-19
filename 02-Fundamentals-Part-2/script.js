@@ -25,7 +25,7 @@ logger();
 logger();
 logger();
 
-//The function accepts parameters. When we call it, the values are arguments
+//The function accepts parameters (the placeholder in the function). When we call it, the values are arguments
 function fruitProcessor(apples, oranges) {
   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
   return juice;
@@ -37,33 +37,37 @@ console.log(appleJuice); //Juice with 5 apples and 0 oranges.
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice); //Juice with 2 apples and 4 oranges.
 
+//Another example of built in function
 const num = Number("23");
+
+//console.log it's another built in function
 console.log(num);
 */
-
+/* 
 //////////////////////////////////////////////////////////////////////////////
 // Function Declarations vs. Expressions
 
-// Function declaration
-function calcAge1(birthYeah) {
-  return 2037 - birthYeah;
+// Function declaration: consists of the function keyword, followed by: The name of the function. A list of parameters to the function, enclosed in parentheses and separated by commas. The JavaScript statements that define the function, enclosed in curly braces, {}
+//We can call function declarations before they are defined in the code
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
 }
-const age1 = calcAge1(1991);
+const ageDeclaration = calcAge1(1991);
 
-// Function expression
-const calcAge2 = function (birthYeah) {
-  return 2037 - birthYeah;
+// Function expression. The main difference between a function expression and a function declaration is the function name, which can be omitted in function expressions to create anonymous functions. A function expression can be used as an IIFE (Immediately Invoked Function Expression) which runs as soon as it is defined
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
 };
-const age2 = calcAge2(1991);
+const ageExpression = calcAge2(1991);
 
-console.log(age1, age2);
+console.log(ageDeclaration, ageExpression);
 
-/* */
-/*
+*/
+
 ///////////////////////////////////////
 // Arrow functions
 
-const calcAge3 = birthYeah => 2037 - birthYeah;
+const calcAge3 = (birthYeah) => 2037 - birthYeah;
 const age3 = calcAge3(1991);
 console.log(age3);
 
@@ -72,11 +76,13 @@ const yearsUntilRetirement = (birthYeah, firstName) => {
   const retirement = 65 - age;
   // return retirement;
   return `${firstName} retires in ${retirement} years`;
-}
+};
 
-console.log(yearsUntilRetirement(1991, 'Jonas')); console.log(yearsUntilRetirement(1980, 'Bob'));
+console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1980, "Bob"));
 
-
+/* */
+/*
 ///////////////////////////////////////
 // Functions Calling Other Functions
 function cutFruitPieces(fruit) {
