@@ -151,6 +151,20 @@ GOOD LUCK 😀
 */
 
 /*
+//MY SOLUTION
+const calcAverage = (a , b, c) => (a + b + c) / 3;
+
+const scoreDolphins = calcAverage();
+const scoreKoalas = calcAverage();
+
+function checkWinner(scoreDolphins, scoreKoalas) {
+  if(scoreDolphins > scoreKoalas) {console.log(`Dolphins win (${scoreDolphins} vs. ${scoreKoalas})`)}
+  else if (scoreKoalas > scoreDolphins){console.log(`Koalas win (${scoreKoalas} vs. ${scoreDolphins})`)}
+  else {console.log(`No team wins...`)}
+}
+*/
+/*
+//JONAS SOLUTION
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(3, 4, 5));
 
@@ -178,7 +192,8 @@ scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 
-
+*/
+/*
 ///////////////////////////////////////
 // Introduction to Arrays
 const friend1 = 'Michael';
