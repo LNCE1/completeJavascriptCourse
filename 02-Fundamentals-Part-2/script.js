@@ -257,14 +257,14 @@ console.log(ages); //[ 34, 57, 22, 14, 6 ]
 /*
 ///////////////////////////////////////
 // Basic Array Operations (Methods)
-const friends = ['Michael', 'Steven', 'Peter'];
+const friends = ["Michael", "Steven", "Peter"];
 
 // Add elements
-const newLength = friends.push('Jay');
+const newLength = friends.push("Jay"); //last
 console.log(friends);
 console.log(newLength);
 
-friends.unshift('John');
+friends.unshift("John"); //beginning
 console.log(friends);
 
 // Remove elements
@@ -276,16 +276,21 @@ console.log(friends);
 friends.shift(); // First
 console.log(friends);
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob'));
+//To know at what index the element is located
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));
 
 friends.push(23);
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
-console.log(friends.includes(23));
 
-if (friends.includes('Steven')) {
-  console.log('You have a friend called Steven');
+//includes it's to know if the element is in the array or not (true or false)
+console.log(friends.includes("Steven")); //true
+console.log(friends.includes("Bob")); //false
+friends.push(23);
+console.log(friends.includes(23)); //false. Because it's a strict equality operator
+
+// Includes method as a conditional
+if (friends.includes("Steven")) {
+  console.log("You have a friend called Steven");
 }
 */
 
