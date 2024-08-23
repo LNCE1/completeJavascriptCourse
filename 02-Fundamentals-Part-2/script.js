@@ -332,27 +332,28 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
+*/
 
-
-///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 // Introduction to Objects
 const jonasArray = [
-  'Jonas',
-  'Schmedtmann',
+  "Jonas",
+  "Schmedtmann",
   2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven']
+  "teacher",
+  ["Michael", "Peter", "Steven"],
 ];
 
+//Object example with 5 ket:value pairs==. An object is a collection of properties, and a property is an association between a name (or key) and a value.
 const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
   age: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
 };
 
-
+/*
 ///////////////////////////////////////
 // Dot vs. Bracket Notation
 const jonas = {
