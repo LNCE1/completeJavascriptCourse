@@ -350,7 +350,7 @@ const jonas = {
   lastName: "Schmedtmann",
   age: 2037 - 1991,
   job: "teacher",
-  friends: ["Michael", "Peter", "Steven"],
+  friends: ["Michael", "Peter", "Steven"], //Array inside the object
 };
 
 /*
