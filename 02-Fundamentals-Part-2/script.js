@@ -334,8 +334,12 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(bills, tips, totals);
 */
 
+/*
 //////////////////////////////////////////////////////////////////////////////
 // Introduction to Objects
+
+//Array example
+//The order of these values does matter when retrieving
 const jonasArray = [
   "Jonas",
   "Schmedtmann",
@@ -344,7 +348,10 @@ const jonasArray = [
   ["Michael", "Peter", "Steven"],
 ];
 
-//Object example with 5 ket:value pairs==. An object is a collection of properties, and a property is an association between a name (or key) and a value.
+//Object literal syntax:
+//example with 5 key:value pairs.
+//An object is a collection of properties, and a property is an association between a name (or key) and a value.
+//The order of these values doen't matter when retrieving
 const jonas = {
   firstName: "Jonas",
   lastName: "Schmedtmann",
@@ -352,28 +359,29 @@ const jonas = {
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"], //Array inside the object
 };
+console.log(jonasArray, jonas);
+*/
 
-/*
 ///////////////////////////////////////
 // Dot vs. Bracket Notation
 const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
   age: 2037 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
 };
 console.log(jonas);
 
 console.log(jonas.lastName);
-console.log(jonas['lastName']);
+console.log(jonas["lastName"]);
 
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
 
 // console.log(jonas.'last' + nameKey)
-
+/*
 const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends');
 
 if (jonas[interestedIn]) {
@@ -390,7 +398,8 @@ console.log(jonas);
 // "Jonas has 3 friends, and his best friend is called Michael"
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
 
-
+*/
+/*
 ///////////////////////////////////////
 // Object Methods
 
