@@ -373,9 +373,13 @@ const jonas = {
 };
 console.log(jonas);
 
+//Dot Notation Example, the dot it's an operator that will go to the object, and then retrieve the property
 console.log(jonas.lastName);
+
+//Bracket Notation Example, we can specify a string,
 console.log(jonas["lastName"]);
 
+////Bracket Notation Example: we can put any operation/expression, something that produces a value
 const nameKey = "Name";
 console.log(jonas["first" + nameKey]);
 console.log(jonas["last" + nameKey]);
