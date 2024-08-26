@@ -361,9 +361,10 @@ const jonas = {
 };
 console.log(jonasArray, jonas);
 */
-/*
+/**/
 ///////////////////////////////////////
 // Dot vs. Bracket Notation
+
 const jonas = {
   firstName: "Jonas",
   lastName: "Schmedtmann",
@@ -371,26 +372,26 @@ const jonas = {
   job: "teacher",
   friends: ["Michael", "Peter", "Steven"],
 };
-console.log(jonas);
+//console.log(jonas);
 
 //Dot Notation Example, the dot it's an operator that will go to the object, and then retrieve the property
-console.log(jonas.lastName);
+//console.log(jonas.lastName);
 
 //Bracket Notation Example, we can specify a string,
-console.log(jonas["lastName"]);
+//console.log(jonas["lastName"]);
 
 ////Bracket Notation Example: we can put any operation/expression, something that produces a value
 const nameKey = "Name";
-console.log(jonas["first" + nameKey]);
-console.log(jonas["last" + nameKey]);
+// console.log(jonas["first" + nameKey]);
+// console.log(jonas["last" + nameKey]);
 
-*/
-
+//Let's say that we don't know what property to show yet. We can ask through a user interface.
+//Open index.html on google chrome to see the prompt (mensaje en la barra)
 const interestedIn = prompt(
   "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
 );
-console.log(interestedIn);
-/*
+//console.log(interestedIn);
+
 if (jonas[interestedIn]) {
   console.log(jonas[interestedIn]);
 } else {
@@ -399,9 +400,11 @@ if (jonas[interestedIn]) {
   );
 }
 
+//Assigning new values with dot and Bracket Notation
 jonas.location = "Portugal";
 jonas["twitter"] = "@jonasschmedtman";
-console.log(jonas);
+//console.log(jonas);
+
 /*
 // Challenge
 // "Jonas has 3 friends, and his best friend is called Michael"
