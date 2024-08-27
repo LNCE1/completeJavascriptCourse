@@ -361,7 +361,8 @@ const jonas = {
 };
 console.log(jonasArray, jonas);
 */
-/**/
+
+/*
 ///////////////////////////////////////
 // Dot vs. Bracket Notation
 
@@ -411,53 +412,48 @@ console.log(
   `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
 );
 
-/*
-
-
-*/
-/*
-///////////////////////////////////////
-// Object Methods
+/**/
+//////////////////////////////////////////////////////////////////////////////
+// Object Methods: Functions are values, So, it's possible adding functions as the value of one of its properties
 
 const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  birthYeah: 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven'],
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
   hasDriversLicense: true,
 
-  // calcAge: function (birthYeah) {
-  //   return 2037 - birthYeah;
-  // }
-
-  // calcAge: function () {
-  //   // console.log(this);
-  //   return 2037 - this.birthYeah;
-  // }
-
   calcAge: function () {
-    this.age = 2037 - this.birthYeah;
-    return this.age;
+    //console.log(this);
+    return 2037 - this.birthYear;
   },
 
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
-  }
+  // calcAge: function () {
+  //   this.age = 2037 - this.birthYear;
+  //   return this.age;
+  // },
+
+  // getSummary: function () {
+  //   return `${this.firstName} is a ${this.calcAge()}-year old ${
+  //     jonas.job
+  //   }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  // },
 };
 
-console.log(jonas.calcAge());
+//Calling method in line 427
+//console.log(`${jonas.firstName} is ${jonas.calcAge()} years old`);
 
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
 
 // Challenge
 // "Jonas is a 46-year old teacher, and he has a driver's license"
-console.log(jonas.getSummary());
-*/
+//console.log(jonas.getSummary());
+/**/
 
-///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 // Coding Challenge #3
 
 /*
@@ -507,7 +503,7 @@ if (mark.bmi > john.bmi) {
 }
 
 
-///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 // Iteration: The for Loop
 
 // console.log('Lifting weights repetition 1 🏋️‍♀️');
@@ -527,7 +523,7 @@ for (let rep = 1; rep <= 30; rep++) {
 }
 
 
-///////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 // Looping Arrays, Breaking and Continuing
 const jonas = [
   'Jonas',
