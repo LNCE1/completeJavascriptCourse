@@ -412,7 +412,7 @@ console.log(
   `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
 );
 
-/**/
+/*
 //////////////////////////////////////////////////////////////////////////////
 // Object Methods: Functions are values, So, it's possible adding functions as the value of one of its properties
 
@@ -424,34 +424,39 @@ const jonas = {
   friends: ["Michael", "Peter", "Steven"],
   hasDriversLicense: true,
 
+  //First version
+  // calcAge: function () {
+  //   //console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+
+  //Better option, more efficient
   calcAge: function () {
-    //console.log(this);
-    return 2037 - this.birthYear;
+    this.age = 2037 - this.birthYear;
+    return this.age;
   },
 
-  // calcAge: function () {
-  //   this.age = 2037 - this.birthYear;
-  //   return this.age;
-  // },
-
-  // getSummary: function () {
-  //   return `${this.firstName} is a ${this.calcAge()}-year old ${
-  //     jonas.job
-  //   }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
-  // },
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      jonas.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  },
 };
 
 //Calling method in line 427
 //console.log(`${jonas.firstName} is ${jonas.calcAge()} years old`);
-
-// console.log(jonas.age);
-// console.log(jonas.age);
-// console.log(jonas.age);
+console.log(
+  `Calling the calcAge method, that returns the age: ${jonas.calcAge()}`
+);
+console.log(
+  `Better Option to get the age once, it keeps it stored: ${jonas.age} years old`
+);
 
 // Challenge
 // "Jonas is a 46-year old teacher, and he has a driver's license"
-//console.log(jonas.getSummary());
-/**/
+console.log(jonas.getSummary());
+
+*/
 
 //////////////////////////////////////////////////////////////////////////////
 // Coding Challenge #3
