@@ -473,7 +473,7 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 /* Write your code below. Good luck! 🙂 */
-
+/*
 const mark = {
   fullName: "Mark Miller",
   mass: 78,
@@ -508,8 +508,10 @@ if (mark.bmi > john.bmi) {
     `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`
   );
 }
+*?
 
-/*
+
+/* 
 //////////////////////////////////////////////////////////////////////////////
 // Iteration: The for Loop
 
@@ -528,17 +530,17 @@ if (mark.bmi > john.bmi) {
 for (let rep = 1; rep <= 30; rep++) {
   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
-
+*/
 
 //////////////////////////////////////////////////////////////////////////////
 // Looping Arrays, Breaking and Continuing
 const jonas = [
-  'Jonas',
-  'Schmedtmann',
+  "Jonas",
+  "Schmedtmann",
   2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
 ];
 const types = [];
 
@@ -547,7 +549,7 @@ const types = [];
 // ...
 // console.log(jonas[4])
 // jonas[5] does NOT exist
-
+/*
 for (let i = 0; i < jonas.length; i++) {
   // Reading from jonas array
   console.log(jonas[i], typeof jonas[i]);
@@ -568,22 +570,22 @@ for (let i = 0; i < years.length; i++) {
 console.log(ages);
 
 // continue and break
-console.log('--- ONLY STRINGS ---')
+console.log("--- ONLY STRINGS ---");
 for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] !== 'string') continue;
+  if (typeof jonas[i] !== "string") continue;
 
   console.log(jonas[i], typeof jonas[i]);
 }
 
-console.log('--- BREAK WITH NUMBER ---')
+console.log("--- BREAK WITH NUMBER ---");
 for (let i = 0; i < jonas.length; i++) {
-  if (typeof jonas[i] === 'number') break;
+  if (typeof jonas[i] === "number") break;
 
   console.log(jonas[i], typeof jonas[i]);
 }
-
-
-///////////////////////////////////////
+*/
+/*
+//////////////////////////////////////////////////////////////////////////////
 // Looping Backwards and Loops in Loops
 const jonas = [
   'Jonas',
@@ -608,8 +610,8 @@ for (let exercise = 1; exercise < 4; exercise++) {
     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♀️`);
   }
 }
-
-
+*/
+/*
 ///////////////////////////////////////
 // The while Loop
 for (let rep = 1; rep <= 10; rep++) {
