@@ -596,6 +596,7 @@ const jonas = [
 // 0, 1, ..., 4
 // 4, 3, ..., 0
 
+//Example loop inside a loop
 for (let i = jonas.length - 1; i >= 0; i--) {
   console.log(i, jonas[i]);
 }
