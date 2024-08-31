@@ -627,7 +627,7 @@ while (dice !== 6) {
 console.log(dice);
 */
 ///////////////////////////////////////
-// Coding Challenge #4
+// Coding Challenge #4 Last Challenge
 
 /*
 Let's improve Steven's tip calculator even more, this time using loops!
