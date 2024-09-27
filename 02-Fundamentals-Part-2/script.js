@@ -387,28 +387,32 @@ const nameKey = "Name";
 
 //Let's say that we don't know what property to show yet. We can ask through a user interface.
 //Open index.html on google chrome to see the prompt (mensaje en la barra)
-const interestedIn = prompt(
-  "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
-);
+// const interestedIn = prompt(
+//   "What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends"
+// );
 //console.log(interestedIn);
 
-if (jonas[interestedIn]) {
-  console.log(jonas[interestedIn]);
-} else {
-  console.log(
-    "Wrong request! Choose between firstName, lastName, age, job, and friends"
-  );
-}
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! Choose between firstName, lastName, age, job, and friends"
+//   );
+// }
 
 //Assigning new values with dot and Bracket Notation
 jonas.location = "Portugal";
 jonas["twitter"] = "@jonasschmedtman";
 //console.log(jonas);
 
-/*
 // Challenge
 // "Jonas has 3 friends, and his best friend is called Michael"
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+console.log(
+  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`
+);
+
+/*
+
 
 */
 /*
